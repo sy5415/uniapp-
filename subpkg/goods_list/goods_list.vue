@@ -63,6 +63,7 @@
         this.isloading = true
         // 发起请求
         const { data: res } = await uni.$http.get('/api/public/v1/goods/search', this.queryObj)
+        console.log(res)
         if (res.meta.status !== 200) return uni.$showMsg()
         // 为数据赋值：通过展开运算符的形式，进行新旧数据的拼接
         this.goodsList = [...this.goodsList, ...res.message.goods]
