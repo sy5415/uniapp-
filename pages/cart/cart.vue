@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="scroll-view-container">
 		
 	</view>
 </template>
